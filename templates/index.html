@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}" type="image/png">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Deepcytes Logo" class="logo">
+    </div>
+    <!-- Main Content Section -->
+    <section id="home">
+        <div class="container">
+            <div id="home" class="home-content">
+                <h1>DeepCytes Cybersecurity Assessment</h1>
+                <p>Take this quiz to know your organization's security posture.</p>
+                <a href="/quiz" class="btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Deepcytes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

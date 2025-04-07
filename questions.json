@@ -1,0 +1,1029 @@
+{
+    "common": [
+        {"text": "What is your company's name?", "type": "text"},
+        {"text": "What is your email address?", "type": "email"},
+        {"text": "Which compliance test do you want to take?", "type": "checkbox", "options": ["ISO 27001", "NIST", "PCI DSS", "GDPR", "SOC 2", "HIPAA", "DSS"]}
+      ],
+    "compliance_categories": [
+      {
+        "name": "HIPAA",
+        "questions": [
+          {
+            "question": "Does our company have a formal HIPAA compliance policy that is regularly reviewed and updated?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain current policy review and update schedule.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop and implement a formal HIPAA compliance policy.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we conduct regular risk assessments to identify potential HIPAA compliance gaps?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue conducting regular risk assessments.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Conduct regular risk assessments (e.g., annually) to identify vulnerabilities and gaps in HIPAA compliance.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are all employees required to complete HIPAA training on handling Protected Health Information (PHI)?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain mandatory HIPAA training for all employees who handle PHI.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement mandatory HIPAA training for all employees who handle PHI.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have strict access control policies to ensure only authorized personnel can access PHI?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue to enforce strict access control policies.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop and enforce strict access control policies. Use the principle of least privilege. Implement multi-factor authentication where appropriate.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Is PHI encrypted both in transit and at rest to prevent unauthorized access?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue to encrypt PHI both in transit and at rest.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement encryption for PHI both in transit and at rest.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have a documented and tested incident response plan for handling PHI breaches?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain the documented and tested incident response plan.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop a comprehensive incident response plan.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are third-party vendors and business associates required to sign a Business Associate Agreement (BAA) before handling PHI?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Ensure BAAs are current and enforced with all third-party vendors and business associates.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Ensure that BAAs are in place with all third-party vendors and business associates before they handle PHI.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Does our company have a process to handle patient requests for access, correction, and deletion of their PHI?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain the documented process for handling patient requests.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Establish a documented process to handle patient requests for access, correction, and deletion of PHI in accordance with HIPAA regulations.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we regularly conduct internal audits to ensure ongoing HIPAA compliance?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue regular internal audits. Document audit findings and corrective actions.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Conduct regular internal audits to monitor HIPAA compliance. Document audit findings and corrective actions.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Is there a designated HIPAA Compliance Officer responsible for overseeing compliance efforts?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Ensure the HIPAA Compliance Officer has the resources and authority to perform their duties.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Appoint a HIPAA Compliance Officer to oversee and manage HIPAA compliance efforts.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "SOC 2",
+        "questions": [
+          {
+            "question": "Does our company have formally documented policies to ensure compliance with SOC 2 Trust Service Criteria?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain and regularly review documented policies and procedures for SOC 2 compliance.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop and document policies and procedures that address the relevant SOC 2 Trust Services Criteria.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we conduct regular risk assessments to identify and mitigate security vulnerabilities in our systems?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue regular risk assessments.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Perform regular risk assessments to identify and mitigate security vulnerabilities.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are access controls in place to restrict unauthorized access to sensitive data and critical systems?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain and enforce access controls.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement and enforce access controls based on the principle of least privilege.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Does our organization encrypt sensitive customer data both in transit and at rest?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue to encrypt sensitive customer data.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Encrypt sensitive customer data both in transit and at rest.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have an incident response plan that is documented, tested, and updated regularly?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain, test, and update the incident response plan regularly.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop, document, test, and regularly update an incident response plan to address security incidents.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are all employees required to undergo security awareness training on SOC 2 policies and best practices?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue providing regular security awareness training.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Provide regular security awareness training to all employees, covering SOC 2 policies and best practices.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have system monitoring and logging mechanisms in place to detect and respond to security incidents?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain system monitoring and logging.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement system monitoring and logging to detect and respond to security incidents. Retain logs for an appropriate period.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we ensure that third-party vendors handling our customer data comply with SOC 2 security requirements?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue to ensure third-party vendor compliance.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Ensure third-party vendors comply with SOC 2 security requirements. Include SOC 2 requirements in vendor contracts and perform due diligence.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Is our disaster recovery and business continuity plan tested periodically to ensure operational resilience?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue to test and maintain the disaster recovery and business continuity plan.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop, test, and maintain a disaster recovery and business continuity plan to ensure operational resilience.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we conduct regular internal audits and assessments to verify our compliance with SOC 2 requirements?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue regular internal audits and assessments.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Conduct regular internal audits and assessments to verify compliance with SOC 2 requirements.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NIST",
+        "questions": [
+          {
+            "question": "Has our company implemented the five core functions of the NIST Cybersecurity Framework: Identify, Protect, Detect, Respond, and Recover?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain implementation of the five core functions.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement the five core functions of the NIST Cybersecurity Framework (Identify, Protect, Detect, Respond, Recover) to manage cybersecurity risk.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we conduct regular risk assessments to identify and mitigate cybersecurity threats as per NIST guidelines?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue regular risk assessments following NIST guidelines.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Conduct regular risk assessments following NIST guidelines to identify and mitigate cybersecurity threats.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Have we adopted the security and privacy controls outlined in NIST SP 800-53 for our information systems?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain adoption and implementation of NIST SP 800-53 controls.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Adopt and implement the appropriate security and privacy controls from NIST SP 800-53 based on risk assessment.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Does our company enforce multi-factor authentication (MFA) to protect sensitive data in compliance with NIST 800-171?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue enforcing multi-factor authentication.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Enforce multi-factor authentication (MFA) for access to sensitive data and systems, as recommended by NIST 800-171.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are all employees trained on NIST cybersecurity policies and best practices on a regular basis?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue providing regular training.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Provide regular training to employees on NIST cybersecurity policies and best practices.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we ensure that all sensitive data is encrypted both in transit and at rest according to NIST standards?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue ensuring data encryption.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Ensure sensitive data is encrypted both in transit and at rest, in accordance with NIST standards.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Has our company implemented continuous monitoring and threat detection mechanisms as per NIST guidelines?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain continuous monitoring and threat detection.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement continuous monitoring and threat detection mechanisms to identify and respond to cybersecurity threats.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are our third-party vendors required to comply with NIST security standards before accessing company data?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue to require third-party vendor compliance.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Require third-party vendors to comply with relevant NIST security standards before granting access to company data.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have an incident response plan that is tested and updated regularly as per NIST recommendations?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain, test, and update the incident response plan regularly.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop, test, and regularly update an incident response plan based on NIST recommendations.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Does our organization align NIST compliance with other regulatory requirements like SOC 2, HIPAA, or GDPR?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue aligning NIST compliance with other regulatory requirements.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Align NIST compliance efforts with other relevant regulatory requirements (e.g., SOC 2, HIPAA, GDPR) to ensure a holistic approach to security and compliance.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ISO 27001",
+        "questions": [
+          {
+            "question": "Has top management formally approved an Information Security Policy aligned with ISO 27001?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue periodic reviews and ensure the policy is communicated across the organization.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Schedule an urgent meeting with executives to develop or update the Information Security Policy, obtain formal approval, and launch a training program.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Identify missing elements and work with leadership to revise and fully endorse the policy.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we conduct regular risk assessments to identify, analyze, and mitigate security threats?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Verify that risk assessments are documented, updated, and that corrective actions are tracked.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement a structured risk management program based on ISO 27005 guidelines, conduct a gap analysis, assign risk owners, and schedule recurring assessments.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are access permissions reviewed periodically to ensure only authorized personnel can access critical systems and data?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Review access permissions regularly to ensure only authorized personnel have access.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Review and update access permissions immediately; restrict access to critical systems.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Assess current permissions and enforce stricter controls where necessary.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have a documented incident response plan that is tested and updated regularly?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain the incident response plan by scheduling regular drills and updating it as new threats emerge.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop a formal incident response plan following industry best practices, define roles and protocols, and conduct simulations immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Audit existing procedures to identify missing elements and enhance the plan with complete detection, containment, and recovery steps.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do all employees receive regular security awareness training on ISO 27001 policies and best practices?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Ensure continuous training and periodic refresher courses are in place.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement a mandatory security training program for all employees.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Is sensitive data encrypted both in transit and at rest, with a structured key management process in place?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue using encryption and key management best practices.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement encryption for data at rest and in transit along with a structured key management process immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Review current encryption practices and address any gaps in key management.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have a disaster recovery and business continuity plan that is tested periodically?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Regularly test the continuity plan and update recovery objectives based on business impact analysis.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop a comprehensive disaster recovery and business continuity plan immediately, and schedule regular tests.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "In Development",
+                "recommendation": "Accelerate development by dedicating resources, setting deadlines, and test immediately upon completion.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are suppliers and third-party vendors required to comply with our security policies and undergo security assessments?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain ongoing vendor reviews, verify compliance certifications, and update contractual obligations regularly.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Establish a vendor compliance program with enforced security agreements and periodic audits.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we conduct regular internal audits and management reviews to ensure ongoing ISO 27001 compliance?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue regular internal audits and management reviews to ensure ongoing compliance.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement a scheduled internal audit program and review compliance procedures immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Identify gaps in the audit process and strengthen internal reviews.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have a process to monitor, measure, and continuously improve our Information Security Management System (ISMS)?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue monitoring and improving your ISMS through regular reviews.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Establish a process for continuous monitoring and improvement of your ISMS immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "In Progress",
+                "recommendation": "Monitor progress and complete the improvement process as soon as possible.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GDPR",
+        "questions": [
+          {
+            "question": "Do we have a valid legal basis (e.g., consent, contract, legitimate interest) for collecting and processing personal data?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Ensure all data processing activities are documented with a valid legal basis and review regularly.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Review data processing operations and implement mechanisms to obtain explicit consent or valid legal basis immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Audit current practices and update documentation and consent mechanisms to fully comply.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we obtain clear, informed, and freely given consent before collecting personal data?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue obtaining clear and informed consent from users.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement clear consent mechanisms and update data collection processes to ensure informed consent.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have a process to handle requests for access, rectification, deletion, and portability of personal data?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain and periodically test your DSAR process to ensure timely responses.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop a formal process for handling data subject requests and train staff accordingly.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Identify and address gaps in your DSAR process.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are encryption, access controls, and pseudonymization applied to protect personal data?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Keep current security measures and conduct regular audits.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement robust encryption, access controls, and pseudonymization immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Review and enhance security measures to fully protect personal data.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have a process to detect, assess and report data breaches to authorities within 72 hours?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain the breach notification process with regular simulations.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop a comprehensive breach notification process and train staff to comply with the 72-hour rule.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are all cross-border data transfers protected using GDPR-approved safeguards like SCCs, BCRs or adequacy decisions?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Ensure all international data transfers are secure and meet GDPR standards.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement proper safeguards for international data transfers immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Not Applicable",
+                "recommendation": "No action needed if no cross-border transfers occur.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Is our privacy policy clear, up-to-date, and accessible, informing users about how we collect and process their data?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue updating the privacy policy and ensure its accessibility.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Redraft your privacy policy to meet GDPR transparency requirements and republish immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Identify missing details, update the policy, and gather feedback to ensure clarity.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we conduct regular audits and assessments to ensure continuous GDPR compliance?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain regular GDPR audits and compliance reviews.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Establish a schedule for regular GDPR audits and update practices as needed.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "PCI DSS",
+        "questions": [
+          {
+            "question": "Have we implemented and maintained firewalls and secure configurations for all systems?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue maintaining firewalls and secure configurations.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement firewalls and secure configurations immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Review and strengthen network security measures.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Is all stored cardholder data encrypted, masked, or protected according to PCI DSS guidelines?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Keep encrypting and protecting stored card data; perform regular audits.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Immediately implement encryption, masking, and protection measures; consult a QSA for a gap analysis.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Not Sure",
+                "recommendation": "Audit your data storage practices to verify compliance.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we encrypt payment card data when transmitted over public networks?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue using TLS/SSL for secure transmission.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement TLS/SSL encryption for all public network transmissions immediately.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Are all systems protected against malware, regularly updated, and securely patched?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue updating systems and performing regular vulnerability scans.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement patch management and vulnerability scanning immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Review and update systems to fix vulnerabilities.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we enforce strict access control measures, ensuring that only authorized personnel can access cardholder data?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain strict access controls and review user permissions periodically.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement strict access controls immediately, including RBAC and MFA.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Is multi-factor authentication (MFA) enabled for all administrative and remote access accounts?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue using MFA for critical access.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement MFA for all administrative and remote access accounts immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Review and enhance current authentication measures to include full MFA.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we regularly monitor and test networks, including logging, intrusion detection, and penetration testing?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain regular network monitoring and testing; update configurations as needed.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Establish comprehensive monitoring and testing processes immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "In Progress",
+                "recommendation": "Complete the implementation of network monitoring and testing as soon as possible.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do all employees handling cardholder data receive regular security awareness training?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue regular security training and refreshers.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Implement mandatory security awareness training immediately.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do we have a documented incident response plan that is tested and updated regularly? (PCI)",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue testing and updating the incident response plan; document incidents for improvement.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Develop and implement a comprehensive incident response plan immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Not Sure",
+                "recommendation": "Review current incident response procedures and develop a full plan if needed.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          },
+          {
+            "question": "Do all vendors and service providers handling cardholder data comply with PCI DSS and provide proof of compliance?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Maintain ongoing vendor compliance checks and review AOCs periodically.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Establish a vendor compliance program, require immediate submission of AOCs, and conduct assessments.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "Partially",
+                "recommendation": "Identify non-compliant vendors, work with them on remediation, and enforce regular compliance reporting.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "DSS",
+        "questions": [
+          {
+            "question": "Do we have a process to monitor, measure, and continuously improve our Information Security Management System (ISMS)?",
+            "response_options": [
+              {
+                "option": "Yes",
+                "recommendation": "Continue monitoring and improving your ISMS through regular reviews.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "No",
+                "recommendation": "Establish a process for continuous monitoring and improvement of your ISMS immediately.",
+                "acknowledgment": "Reviewed"
+              },
+              {
+                "option": "In Progress",
+                "recommendation": "Monitor progress and complete the improvement process as soon as possible.",
+                "acknowledgment": "Reviewed"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,387 @@
+:root {
+    --primary-dark: #0A192F;
+    --primary-medium: #112240;
+    --primary-light: #1E3A6D;
+    --accent: #64FFDA;
+    --text-primary: #CCD6F6;
+    --text-secondary: #8892B0;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+    color: var(--text-primary);
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(17, 34, 64, 0.8);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px var(--shadow);
+    margin: 20px 0;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.progress-bar-container {
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--accent);
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+.content {
+    padding: 20px 0;
+}
+
+#questionContainer {
+    margin-bottom: 30px;
+}
+
+#questionNumber {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#questionText {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+#answerContainer {
+    margin: 20px 0;
+}
+
+input[type='text'], 
+input[type='email'], 
+textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    border-radius: 8px;
+    background-color: rgba(10, 25, 47, 0.7);
+    color: var(--text-primary);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.2);
+}
+
+.radio-option,
+.checkbox-option {
+    display: block;
+    position: relative;
+    padding: 15px 15px 15px 50px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: rgba(30, 58, 109, 0.4);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.radio-option:hover,
+.checkbox-option:hover {
+    background-color: rgba(30, 58, 109, 0.7);
+}
+
+.radio-option input,
+.checkbox-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 24px;
+    width: 24px;
+    background-color: rgba(10, 25, 47, 0.7);
+    border: 2px solid rgba(100, 255, 218, 0.5);
+    border-radius: 50%;
+}
+
+.checkbox-option .checkmark {
+    border-radius: 4px;
+}
+
+.radio-option input:checked ~ .checkmark,
+.checkbox-option input:checked ~ .checkmark {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.radio-option .checkmark:after,
+.checkbox-option .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-option input:checked ~ .checkmark:after,
+.checkbox-option input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio-option .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-dark);
+}
+
+.checkbox-option .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--primary-dark);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#prevButton {
+    background-color: rgba(140, 149, 179, 0.1);
+    color: var(--text-secondary);
+}
+
+#prevButton:hover:not(:disabled) {
+    background-color: rgba(140, 149, 179, 0.2);
+    color: var(--text-primary);
+}
+
+#prevButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#nextButton {
+    background-color: var(--accent);
+    color: var(--primary-dark);
+}
+
+#nextButton:hover {
+    background-color: rgba(100, 255, 218, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(100, 255, 218, 0.3);
+}
+
+#nextButton:active {
+    transform: translateY(0);
+}
+
+.thank-you-container {
+    text-align: center;
+}
+
+.thank-you-container h2 {
+    font-size: 28px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.thank-you-container p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.report-link {
+    margin-top: 30px;
+}
+
+.report-link a {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--primary-dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.report-link a:hover {
+    background-color: rgba(100, 255, 218, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(100, 255, 218, 0.3);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    width: 100%;
+}
+
+/* Animation for questions */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    
+    header h1 {
+        font-size: 26px;
+    }
+    
+    #questionText {
+        font-size: 20px;
+    }
+    
+    .radio-option, .checkbox-option {
+        font-size: 16px;
+        padding: 12px 12px 12px 45px;
+    }
+    
+    .checkmark {
+        top: 12px;
+        left: 12px;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-container h1 {
+    font-size: 48px;
+    color: var(--accent);
+}
+
+.home-container .subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+
+.nav-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-dark);
+    background-color: var(--accent);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: rgba(100, 255, 218, 0.8);
+}

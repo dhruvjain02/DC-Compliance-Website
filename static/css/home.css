@@ -1,0 +1,115 @@
+:root {
+    --primary-dark: #0A192F;
+    --primary-medium: #112240;
+    --primary-light: #1E3A6D;
+    --accent: #64FFDA;
+    --text-primary: #CCD6F6;
+    --text-secondary: #8892B0;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+    color: var(--text-primary);
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#home {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--text-primary);
+}
+
+#home h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: var(--accent);
+    color: var(--primary-dark);
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(100, 255, 218, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(100, 255, 218, 0.3);
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animation for homepage */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#home {
+    animation: fadeIn 0.5s ease forwards;
+   
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 36px;
+    }
+    
+    #home p {
+        font-size: 16px;
+    }
+    
+    .btn {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+    
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+.logo-container {
+  box-shadow: 4px 4px 10px var(--shadow);
+
+}
+
